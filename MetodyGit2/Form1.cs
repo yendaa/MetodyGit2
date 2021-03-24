@@ -16,11 +16,16 @@ namespace MetodyGit2
         {
             InitializeComponent();
         }
-        DateTime Za100Dni()
+        DateTime Za100Dni() //metoda funguje
         {
             DateTime dt = DateTime.Now;
             DateTime datum100 = dt.AddDays(100);
             return datum100;
+        }
+
+        double Mocnina(double a) //umocní číslo z textbocu na druhou
+        {
+            return a * a;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +33,8 @@ namespace MetodyGit2
             DateTime dt = DateTime.Now;
             DateTime datum100 = dt.AddDays(100);
             MessageBox.Show("Za 100 dnů od aktuálního data bude " + datum100.ToString());
+            double a = double.Parse(textBox1.Text);
+            MessageBox.Show("Druhá mocnina čísla z textboxu je: " + Mocnina(a));
         }
     }
 }
