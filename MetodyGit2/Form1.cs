@@ -23,7 +23,7 @@ namespace MetodyGit2
             return datum100;
         }
 
-        double Mocnina(double a) //umocní číslo z textbocu na druhou
+        double Metoda2(double a) //umocní číslo z textbocu na druhou
         {
             return a * a;
         }
@@ -34,7 +34,7 @@ namespace MetodyGit2
             DateTime datum100 = dt.AddDays(100);
             MessageBox.Show("Za 100 dnů od aktuálního data bude " + datum100.ToString());
             double a = double.Parse(textBox1.Text);
-            MessageBox.Show("Druhá mocnina čísla z textboxu je: " + Mocnina(a));
+            MessageBox.Show("Druhá mocnina čísla z textboxu je: " + Metoda2(a));
         }
     }
 }
